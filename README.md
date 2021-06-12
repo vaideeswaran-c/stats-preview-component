@@ -23,12 +23,11 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/desktop.png)
-![](./images/mobile.png)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobile-first-stats-preview-component--2hw8mhaR)
--   Live Site URL: [Add live site URL here](https://crimson-stats-preview.netlify.app/)
+-   Solution URL: [Fronend Mentor Live Solution](https://www.frontendmentor.io/solutions/mobile-first-stats-preview-component--2hw8mhaR)
+-   Live Site URL: [Netlify Live Site](https://crimson-stats-preview.netlify.app/)
 
 ## My process
 
