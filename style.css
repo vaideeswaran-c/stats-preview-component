@@ -1,0 +1,134 @@
+:root {
+	--Very-dark-blue: hsl(233, 47%, 7%);
+	--Dark-desaturated-blue: hsl(244, 38%, 16%);
+	--Soft-violet: hsl(277, 64%, 61%);
+	--White: hsl(0, 0%, 100%);
+	--Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+	--Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	font-family: "Inter", sans-serif;
+	color: var(--White);
+	background-color: var(--Very-dark-blue);
+}
+
+.container {
+	margin: 50px 10px;
+	background-color: var(--Dark-desaturated-blue);
+}
+
+.container .card {
+	border-radius: 5px;
+}
+
+.container .picture {
+	background-image: url("./images/image-header-mobile.jpg");
+	height: 400px;
+}
+
+.container .card .overlay {
+	background-color: hsl(277, 64%, 61%, 60%);
+	height: 400px;
+}
+
+.container .card h1 {
+	font-family: "Lexend Deca", sans-serif;
+	text-align: center;
+	padding: 30px 10px 5px;
+	line-height: 1.3;
+	color: var(--White);
+}
+
+.container .card h1 span {
+	color: var(--Soft-violet);
+}
+
+.container .card p {
+	line-height: 1.3;
+	color: var(--Slightly-transparent-white);
+	padding: 5px 30px;
+	text-align: center;
+}
+
+.container .card ul {
+	padding: 30px 10px;
+	text-align: center;
+}
+
+.container .card ul li {
+	list-style: none;
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: var(--Slightly-transparent-white);
+}
+
+.container .card ul li span {
+	display: block;
+	text-transform: initial;
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 5px;
+	color: var(--White);
+}
+
+@media (min-width: 768px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row-reverse;
+		padding: 0;
+	}
+
+	.container .card {
+		min-width: 50%;
+	}
+
+	.container .card .picture {
+		background-image: url("./images/image-header-desktop.jpg");
+		background-size: cover; /* <------ */
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.container .card h1 {
+		text-align: left;
+		padding-left: 30px;
+	}
+
+	.container .card p {
+		text-align: left;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.container .card ul {
+		display: flex;
+		text-align: center;
+		padding-left: 30px;
+	}
+
+	.container .card ul li {
+		padding: 0 30px 0 0;
+	}
+
+	.container .card ul li span {
+		font-size: 18px;
+	}
+}
